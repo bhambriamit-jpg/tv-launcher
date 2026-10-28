@@ -1,3 +1,9 @@
+# Builds the launcher APK in the cloud so you don't need Android Studio.
+#
+#   - Every push to main, and every manual run, produces an APK you can download
+#     from the run page (Actions tab -> the run -> Artifacts -> vibe-launcher-apk).
+#   - Pushing a tag that starts with "v" (for example v0.1.0) also publishes the
+#     APK on the repository's Releases page.
 name: Build APK
 
 on:

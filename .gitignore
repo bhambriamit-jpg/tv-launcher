@@ -1,0 +1,12 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.DS_Store
+
+# tvctl runtime files
+tvctl-state.json
+audit-*.txt
+platform-tools/

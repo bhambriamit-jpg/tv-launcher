@@ -1,0 +1,20 @@
+# Packages that `tvctl.py debloat` will disable for the TV's main user.
+# One package per line. Anything after a # is a note. Packages that are not
+# installed on your TV are skipped automatically.
+#
+# Nothing here is deleted from the TV: disabling is reversible with
+# `python3 tvctl.py restore`.
+#
+# After running `python3 tvctl.py audit`, send the output back and the Sony
+# specific entries (Sony apps, promo and store apps) get added below. Sony and
+# MediaTek packages are protected by default because some of them run the tuner,
+# the HDMI inputs and the remote; they need `--force` and are never in this
+# starter list.
+
+# --- Recommendation feeds behind "Top picks" and sponsored rows ---
+com.google.android.tvrecommendations
+com.google.android.leanbacklauncher.recommendations
+
+# --- Optional Google media apps (delete these lines if you use them) ---
+com.google.android.videos            # Google TV / Play Movies app
+com.google.android.youtube.tvmusic   # YouTube Music for TV
